@@ -1,11 +1,10 @@
 const hbs = require("hbs");
 
-const hbs = require('hbs');
 
 /**Helpers */
 
 /*Devuelve el año en curso */
-hbs.registerHelper('getAnio', () => new Date().getFullYear());
+hbs.registerHelper('getAnio', () => { return new Date().getFullYear() });
 
 
 /*Coloca primera letra ed un texto en Mayusculas */
@@ -18,4 +17,4 @@ hbs.registerHelper('capitalizar', (texto) => {
 });
 
 /* Devuelve el nombre*/
-hbs.registerHelper('getNombre', () => capitalizar('mairon jAvieR cuEllO'));
+hbs.registerHelper('getNombre', () => { return 'Mairon J. Cuello' });
